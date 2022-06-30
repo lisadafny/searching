@@ -19,15 +19,25 @@
         <form action="https://www.reddit.com/search" target="_blank">
           <label>
             Search Reddit
-            <input type="text" name="q" placeholder="Look on Reddit" />
-            <button>Search</button>
+            <input
+              type="text"
+              name="q"
+              placeholder="Look on Reddit"
+              id="reddit"
+            />
+            <button onclick="clearFieldAfterSearch('reddit')">Search</button>
           </label>
         </form>
         <form action="https://www.google.com/search" target="_blank">
           <label>
             Search Google
-            <input type="text" name="q" placeholder="Look on Google" />
-            <button>Search</button>
+            <input
+              type="text"
+              name="q"
+              placeholder="Look on Google"
+              id="google"
+            />
+            <button onclick="clearFieldAfterSearch('google')">Search</button>
           </label>
         </form>
         <form action="https://www.youtube.com/results?" target="_blank">
@@ -37,11 +47,13 @@
               type="text"
               name="search_query"
               placeholder="Look on Youtube"
+              id="youtube"
             />
-            <button>Search</button>
+            <button onclick="clearFieldAfterSearch('youtube')">Search</button>
           </label>
         </form>
       </div>
     </div>
+    <script src="search.js"></script>
   </body>
 </html>
