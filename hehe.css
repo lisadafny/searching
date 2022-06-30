@@ -1,0 +1,78 @@
+h1 {
+  color: #fff;
+  letter-spacing: 8px;
+  font-family: Monospace, Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+label {
+  color: #fff;
+  font-weight: 900;
+  text-decoration: #f6a3e4 underline wavy;
+}
+button {
+  color: #f0f8ff;
+  background-color: #000;
+}
+button:hover {
+  background-color: #f6a3e4;
+  color: #000;
+}
+button:active {
+  color: #000;
+  background-color: #f0f8ff;
+}
+body {
+  background: repeating-linear-gradient(
+    -55deg,
+    #223,
+    #222 10px,
+    #333 10px,
+    #332 20px
+  );
+}
+#container {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+}
+#divbgd {
+  border-radius: 25px;
+  background: #000
+    url(https://apod.nasa.gov/apod/image/2204/IC2944_Bemmerl_1080.jpg) no-repeat
+    fixed center;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  z-index: 1;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+#divtext {
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+::selection {
+  color: #f0f8ff;
+  background-color: #f6a3e4;
+}
+
+input[type="text"] {
+  border-radius: 25px;
+  padding-left: 10px;
+}
+
+form {
+  padding-top: 20px;
+}
+
+input[type="text"]:hover {
+  border: 2px solid #f6a3e490;
+}
