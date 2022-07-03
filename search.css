@@ -9,11 +9,11 @@ h1 {
 label {
   color: #fff;
   font-weight: 900;
-  text-decoration: #f6a3e4 underline wavy;
 }
 button {
   color: #f0f8ff;
   background-color: #000;
+  transition: 1s;
 }
 button:hover {
   background-color: #f6a3e4;
@@ -67,6 +67,7 @@ body {
 input[type="text"] {
   border-radius: 25px;
   padding-left: 10px;
+  transition: 2s;
 }
 
 form {
@@ -74,5 +75,5 @@ form {
 }
 
 input[type="text"]:hover {
-  border: 2px solid #f6a3e490;
+  border: 2px solid #f6a3e4;
 }
