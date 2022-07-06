@@ -4,28 +4,20 @@ h1 {
   font-family: Monospace, Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   font-size: 40px;
+  text-align: center;
 }
 
 label {
   color: #fff;
   font-weight: 900;
+  right: 30px;
+  padding-left: 100px;
 }
-button {
-  color: #f0f8ff;
-  background-color: #000;
-  transition: 1s;
-}
-button:hover {
-  background-color: #f6a3e4;
-  color: #000;
-}
-button:active {
-  color: #000;
-  background-color: #f0f8ff;
-}
+
 body {
+  margin: 0px;
   background: repeating-linear-gradient(
-    -55deg,
+    180deg,
     #223,
     #222 10px,
     #333 10px,
@@ -52,7 +44,6 @@ body {
   height: 100%;
 }
 #divtext {
-  text-align: center;
   position: absolute;
   z-index: 2;
   margin: auto;
@@ -68,12 +59,35 @@ input[type="text"] {
   border-radius: 25px;
   padding-left: 10px;
   transition: 2s;
+  border: 2px solid #f0f8ff;
+  position: absolute;
+  right: 100px;
+}
+input[type="text"]:hover {
+  border: 2px solid #f6a3e4;
+  box-sizing: border-box;
 }
 
 form {
   padding-top: 20px;
 }
 
-input[type="text"]:hover {
-  border: 2px solid #f6a3e4;
+button {
+  right: 100px;
+  background: none;
+  border-radius: 10px 0px 0px 10px;
+  -webkit-transform: rotate(180deg);
+  border: none;
+  font-weight: bold;
+  color: #f6a3e4;
+  position: absolute;
+  height: 21px;
+  font-size: 1.3em;
+  box-sizing: border-box;
+  padding-bottom: 24px;
+  transition: 2s;
+}
+button:hover {
+  cursor: pointer;
+  color: #000;
 }
