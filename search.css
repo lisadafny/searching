@@ -76,7 +76,7 @@ button {
   right: 100px;
   background: none;
   border-radius: 10px 0px 0px 10px;
-  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
   border: none;
   font-weight: bold;
   color: #f6a3e4;
