@@ -114,3 +114,34 @@ button:hover {
   background: #332;
   border-radius: 25px;
 }
+
+@media (max-width: 1024px) {
+  body {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background: #f6a3e4
+      url(https://apod.nasa.gov/apod/image/2204/IC2944_Bemmerl_1080.jpg)
+      repeat-y center;
+    height: fit-content;
+  }
+  #container {
+    background: none;
+    scale: -1;
+    width: 270px;
+    top: 0;
+  }
+  button {
+    right: 10px;
+  }
+  input[type="text"] {
+    right: 10px;
+    width: 120px;
+  }
+  label {
+    padding-left: 10px;
+  }
+}
